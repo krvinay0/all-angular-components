@@ -1,0 +1,31 @@
+<!-- With Redirect Link -->
+<div style="position: relative !important;" *ngIf="isRedirectLink">
+  <owl-carousel-o [options]="customOptions" (dragging)="isDragging = $event.dragging">
+    <ng-container *ngFor="let item of slidesStore">
+      <ng-template carouselSlide>
+        <div class="slider">
+          <a [href]="item.url" target="_blank">
+            <img [src]="item.src" [alt]="item.text" />
+            <div class="slide-text" *ngIf="isImageCaption">{{ item.text }}</div>
+          </a>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
+
+
+<!-- With Out Redirect Link -->
+<div style="position: relative !important;" *ngIf="!isRedirectLink">
+  <owl-carousel-o [options]="customOptions" (dragging)="isDragging = $event.dragging">
+    <ng-container *ngFor="let item of slidesStore">
+      <ng-template carouselSlide>
+        <div class="slider">
+          <img [src]="item.src" [alt]="item.text" />
+          <div class="slide-text" *ngIf="isImageCaption">{{ item.text }}</div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
+

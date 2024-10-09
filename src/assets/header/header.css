@@ -1,0 +1,55 @@
+.toolbar {
+    height: 80px;
+}
+
+.toolbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-details .icon {
+    margin-right: 10px;
+}
+
+.phone,
+.email,
+.whatsapp,
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    background-color: #6084e8;
+    padding: 6px;
+    border-radius: 50%;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-details p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.icon-details p a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.manu-button {
+    width: 142px;
+    border-radius: 5px;
+    padding: 0;
+}
+.logo{
+  cursor: pointer;
+}

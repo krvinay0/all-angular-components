@@ -1,0 +1,8 @@
+.footer-container {
+    background: #070370;
+    color: #fff !important;
+    display: flex;
+    justify-content: space-around;
+    padding: 1;
+    padding: 1rem;
+}
